@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Health & Wellness Products</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+    }
+    header { background:url('https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover; padding:90px 20px; color:#fff; text-align:center; position:relative; }
+header::after { content:''; position:absolute; inset:0; background:rgba(0,0,0,0.45); }
+header * { position:relative; z-index:2; }
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    }
+    header p {
+      font-size: 18px;
+      margin: 0;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .product { background:#fff; padding:20px; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.12); text-align:center; transition:transform 0.2s; }
+.product:hover { transform:scale(1.02); }
+    .product img { width: 100%; border-radius: 12px; margin-bottom: 15px; max-height: 380px; object-fit: cover; }
+    .product h3 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    .product p {
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0 15px;
+    }
+    .buy-btn { display:inline-block; padding:12px 18px; background:red; color:white; text-decoration:none; border-radius:10px; font-weight:bold; transition:0.3s ease; }
+.buy-btn:hover { background:#b30000; transform:scale(1.05); box-shadow:0 4px 12px rgba(255,0,0,0.4); }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Discover the Best Health, Fitness & Wellness Offers!</h1>
+  <p>Your curated collection of 2025's top-performing products</p>
+</header>
+
+<div style="text-align:center; padding:20px;">
+  <input id="searchBar" type="text" placeholder="Search products..." style="padding:10px; width:80%; max-width:400px; border-radius:8px; border:1px solid #ccc; font-size:16px;">
+</div>
+
+<script>
+function searchProducts() {
+  const query = document.getElementById('searchBar').value.toLowerCase();
+  const products = document.querySelectorAll('.product');
+  products.forEach(p => {
+    const name = p.querySelector('h3').innerText.toLowerCase();
+    p.style.display = name.includes(query) ? 'block' : 'none';
+  });
+}
+
+document.getElementById('searchBar').addEventListener('input', searchProducts);
+</script>
+
+<div class="products">
+  <div class="product"><img src="https://drive.google.com/uc?export=view&id=1B67ht08otsVscGhk5ZYnPl3FTdj_EgL9"><h3>Mitolyn Health & fitness/dietary supplements</h3><a class="buy-btn" href="https://b52c2arcsmoc2mbbqj2d7g2y23.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1hmpGfZpf-uMGuKQ7sTr91mbgN8qCi64m"><h3>ProstavlVive Powerhouse Prostate offer Health & fitness/Men's Health</h3><a class="buy-btn" href="https://ff1a10ripjrlzzobt88c8ccqdy.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=137V8cBvEnlpU_VmBG2SJKaPvLVwmoOUw"><h3>Audifort Top Brain and Hearing</h3><a class="buy-btn" href="https://7883aalftihd5zfvz0q2xl3m9w.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=123OuPBMZLkiPE-E1c1rfvUUzAii94np8"><h3>ProDentim- The Biggest Monster In the Dental Niche</h3><a class="buy-btn" href="https://f89379i9lnlhynja5ht6tdjlcu.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1moDZ281OVmHeRRYIaZSXhfZDZtIi8NYs"><h3>ProvaDent New Doctor Endorsed Dental offer</h3><a class="buy-btn" href="https://e5ed90xisqlfyohn5c48k8wia1.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1tX9AgRhJTCyS6r8_b3ZRSciLGwajQ64O"><h3>Gluco6 for Blood sugar Now open for everyone</h3><a class="buy-btn" href="https://a02d05mnqlsjvma8yqfg9s9x88.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1qyJCozouM4rUm3g_DL1d2_6BYUpulO-v"><h3>Pineal Guardian X – Upgraded 2025 Brain Supplement Driving Massive EPC</h3><a class="buy-btn" href="https://503034j8pmsmyuekpihd45ypfd.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1O4YWcDTLWRrnN7r6BZGVzr1ymPSTMy-z"><h3>Java Burn 2.0 now LIVE!</h3><a class="buy-btn" href="https://7d37f2ngowhm3yadkjk--jps1z.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1AufFnPg0JBXsR72ktXWEeMeseVsmjTpf"><h3>Sugar Defender - Blood Sugar Support</h3><a class="buy-btn" href="https://45832apfmnplyzgl19feq2ho9d.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=12YFGUIIeB-6di3wzKUTwgmaOzevoiaaK"><h3>Chronic Kidney Disease Solution CKD</h3><a class="buy-btn" href="https://793058qelql87mp2ndj8qr3nfv.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1wee0ojwdF2xSjLpRNjgKNp4D7svHuZGX"><h3>The Smoothie Diet: 21 Day Rapid Weight Loss Program</h3><a class="buy-btn" href="https://cc55b8khskki2zio0irplayc22.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1leWqeDf0Ij3QI4zbqrcOCDgVl6Z1eJel"><h3>Quietum Plus - Top Offer, Now Even Better</h3><a class="buy-btn" href="https://d90c6apjwkqb7phhxakjzbzc4v.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=18iNkaTJU5fE7nYdWxt8BtSuwN88_8X-4"><h3>Finessa - High-Converting Digestion & Poop Offer</h3><a class="buy-btn" href="https://519761sepug81yg-y9ih64dodu.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1-yKPu2-7gL_O4bqdR2S7wyTZNvz-2L92"><h3>Thyrafemme Balance: New Japanese-Inspired Thyroid Offer</h3><a class="buy-btn" href="https://de695bvdlnk92rnrjmy-j619no.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1ZO8_iAxeBBIKDs0GEcdUnYxi2aR0YwrG"><h3>Gluco Extend</h3><a class="buy-btn" href="https://713dc-o9oiu72wlcyhedv73n7b.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1hMxjvLy7-MPFotrzuqfUVwgftaMal2g0"><h3>Liv Pure</h3><a class="buy-btn" href="https://9ba747wbqtil3rokxp2ry11q4a.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1N-FTHwZ4UdJ1CLRuThwkJl3XXnGlgk75"><h3>Sumatra Slim Belly Tonic</h3><a class="buy-btn" href="https://669e62rcvogj-tjk69ngwgxa32.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1AtI1IZAmwCzCPr_3sJtic6RZnFcDaAY1"><h3>Nagano Tonic - $5 EPCs</h3><a class="buy-btn" href="https://cc1ce4ucvoj7uyphhfv7j1fy52.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1Rztgp8cgxnXIO8yaKiWDSlzLN1SeTSU5"><h3>Ikaria Juice</h3><a class="buy-btn" href="https://a528a0tdtqleuwkhhd-8gc5mf2.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=145ORgqZTCme4KwUftG3JBmZ1ZjoYavw9"><h3>Balmorex - Top Back & Joint Pain Cream Product</h3><a class="buy-btn" href="https://c415d1jkmqj9z0b4cbpmuz-kal.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1UozREGouY3w2R7d7Bd8RE_whTRQ1pgZY"><h3>BellyFlush™ | Gut Cleanse & Digestive Detox</h3><a class="buy-btn" href="https://3994barfyrsdtmiakdnljffo4f.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1_sOEx2jf-HbrU6fyeNPxepXA1uXjAIjn"><h3>ArcticBlast - #1 OTC Topical Pain Relief</h3><a class="buy-btn" href="https://c659c3knlipeyvn--5x5sx1x01.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1242yJehU7PMAL5wxqp374oaJ8lbGcFWR"><h3>NeuroPrime</h3><a class="buy-btn" href="https://f78e3xjiwwia5-gcso5bqlskfi.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1xgkQc3d22FFz8SpuyGVLClKkTjy7o8El"><h3>HepatoBurn</h3><a class="buy-btn" href="https://d29310lenonf4wdepmde-38b-1.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1zNtrd-2MnuuyurOwVaveBvYFfzwb0WfD"><h3>GlucoBerry</h3><a class="buy-btn" href="https://db2ffxvfupuewtc4ntn9rdzf56.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1G7j5kRujSpg73rGtzHzFGDMb_O5lRTTI"><h3>SugarMute</h3><a class="buy-btn" href="https://11222bqnliqmy0fn5cbovq1dbo.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1s6liBsbM2ev6NCq-bF3p4u-HzzE0O7Ij"><h3>Neuro Serge</h3><a class="buy-btn" href="https://2d729xjknxhhxnadpko94jsx9n.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1zXFjxxwZsq42QIcKiqAvK23nt9lI9pzl"><h3>ZenCortex</h3><a class="buy-btn" href="https://45f6b8kbnwoc6qfujejf6muo29.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=12VFA5FE5wKbg-0LV5iFphk6HJrCAwzSz"><h3>JointVive</h3><a class="buy-btn" href="https://2e49fbjnopu74si4s8uq4e4z9b.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1_0gsF0VVaa9l3yC9eGCaDPalHa3pbDMy"><h3>Prosta Peak</h3><a class="buy-btn" href="https://1db4f1wauisb4ykcv9xolcqxmg.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1hcHEK4rA0DvkMhOdgY5yjj7rmrilwuw_"><h3>Gout Solution</h3><a class="buy-btn" href="https://46f61bjaqihd-zp9s1pclixnc9.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=101Q8Tgyb1hG6ktgqzqUig9uWDp0zIh8R"><h3>Ignitra</h3><a class="buy-btn" href="https://ee6796xgsutevvkdqjsn231v78.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=18HPw7IV8buZiMGahmokOT1Z7iItRxGp8"><h3>Cardio Slim Tea</h3><a class="buy-btn" href="https://ede529knupsavzp5lnnfslzhng.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1cDlorlzEe6AGeJpPZ9QIpVbdE2JHihAP"><h3>Nerve Fresh</h3><a class="buy-btn" href="https://c95515rgjrrdwqgjnlx4vpsmsj.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1tW4vnsDeo3wOx1ZJANbdCp45P6_-47xH"><h3>NU NERVE</h3><a class="buy-btn" href="https://d51306jjrpnh6rem7fuf9b0t51.hop.clickbank.net" target="_blank">Buy Now</a></div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1uot-oUUAzP54cFHYLoed3TpozwRj5qz4"><h3>Management Guide</h3><a class="buy-btn" href="https://payhip.com/Playdshop" target="_blank">Buy Now</a></div>
+</div>
+
+</body>
+</html>
