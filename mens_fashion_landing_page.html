@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Men's Fashion Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      height: 250px;
+      object-fit: cover;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .price { color: #444; }
+    .discount { color: red; font-weight: bold; }
+    .btn {
+      display: block;
+      margin-top: 10px;
+      padding: 10px;
+      background: #008cff;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>🔥 Men's Fashion Deals – Lowest Prices 🔥</header>
+
+<div class="container">
+
+</div>
+
+<script>
+  const products = [
+    {name:"Men Jeans Slim Racer Biker Jeans", price:999, discount:394, link:"https://invl.me/cln30ho", img:"https://lh3.googleusercontent.com/d/11OWgs0Ys6bDqj6gydqbrdpNyey_1LfRe"},
+    {name:"Men's Tshirt Branded Overrun", price:150, discount:null, link:"https://invl.me/cln30hu", img:"https://lh3.googleusercontent.com/d/1eIHC_t4qPBjwlV1X5TEURhbk4EYh0Lzp"},
+    {name:"Korean Style Pullover", price:500, discount:250, link:"https://invl.me/cln30kp", img:"https://lh3.googleusercontent.com/d/1Zd5X7OrftgLoTeRZTTRQMtHx3mheWz7n"},
+    {name:"HUILISHI V‑Neck Men's Shirt", price:999, discount:50, link:"https://invl.me/cln30ko", img:"https://lh3.googleusercontent.com/d/10IOhjplmJ16HgAIzMeHc7DJoyxhqdM1_"},
+    {name:"HUILISHI Corduroy Men's Shirt", price:999, discount:320, link:"https://invl.me/cln30kn", img:"https://lh3.googleusercontent.com/d/1brdYD3rub2YxyAy230cDHDDkO_oIi0_q"},
+    {name:"HUILISHI Summer Polo", price:999, discount:269, link:"https://invl.me/cln30km", img:"https://lh3.googleusercontent.com/d/11uRn7Tr1AIzSkfp1ut8dZGFQrOmOdTBy"},
+    {name:"Kinwoo T587 Casual Polo", price:400, discount:259, link:"https://invl.me/cln30kl", img:"https://lh3.googleusercontent.com/d/14QdE1ZChKHd9AcIgY_G4LUMC_Cs-onyl"},
+    {name:"Huilishi High-End Drape Shirt", price:499, discount:278, link:"https://invl.me/cln30kg", img:"https://lh3.googleusercontent.com/d/1VgbwieFGZGncifS5fsbh3oYm_I61PEQQ"},
+    {name:"Men's Loose-Fit Cotton Shorts", price:599, discount:299, link:"https://invl.me/cln30kf", img:"https://lh3.googleusercontent.com/d/1lt6ibeKwzz_-Lakndwi5s91KXpadR_j3"},
+    {name:"HUILISHI Korean Chino Shorts", price:999, discount:235, link:"https://invl.me/cln30kd", img:"https://lh3.googleusercontent.com/d/1tEhGLVC1LKzgo9dR7tetIylMQxhyXqtN"},
+    {name:"URBAN PIPE Cotton Shorts", price:360, discount:265, link:"https://invl.me/cln30kc", img:"https://lh3.googleusercontent.com/d/19G5QS253jmAv_kcsDgVUfTimWgrdMBZZ"},
+    {name:"URBAN PIPE Cargo Shorts", price:420, discount:319, link:"https://invl.me/cln30kb", img:"https://lh3.googleusercontent.com/d/1JcSsGbRA1ZrMylzstwqXbigAyp55dJxO"},
+    {name:"Big Size Korea Shorts", price:879, discount:235, link:"https://invl.me/cln30k9", img:"https://lh3.googleusercontent.com/d/1B9g_rLN2YccUnCyQeIJT07dXWfSPLt0I"},
+    {name:"WY&YW Cargo Short w/ Belt", price:448, discount:308, link:"https://invl.me/cln30k8", img:"https://lh3.googleusercontent.com/d/1IByavoujrXecftYktoShqaQ4Sr4mkLqW"},
+    {name:"Kinwoo T149 Plain Polo", price:500, discount:259, link:"https://invl.me/cln30k6", img:"https://lh3.googleusercontent.com/d/1jTnf8_5fdqVsocqiwF1CCtHcPZMsOPYN"},
+    {name:"Kinwoo T634 Outdoor Shirt", price:500, discount:169, link:"https://invl.me/cln30k4", img:"https://lh3.googleusercontent.com/d/1ASDk_UR4ixTKjte1YTl4bEakd5rNl-T3"},
+    {name:"Tattered Denim Shorts", price:279, discount:269, link:"https://invl.me/cln30k2", img:"https://lh3.googleusercontent.com/d/16-Ib9CoerMMkHT-NHOsmiXSkofij5rZX"}
+  ];
+
+  const container = document.querySelector('.container');
+
+  products.forEach(p => {
+    container.innerHTML += `
+      <div class='card'>
+        <img src='${p.img}' alt='Product'>
+        <div class='title'>${p.name}</div>
+        <div class='price'>Price: ₱${p.price}</div>
+        ${p.discount ? `<div class='discount'>Discount Price: ₱${p.discount}</div>` : ''}
+        <a class='btn' href='${p.link}'>Buy Now</a>
+      </div>
+    `;
+  });
+</script>
+
+</body>
+</html>
